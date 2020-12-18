@@ -98,13 +98,75 @@
                 <hr />
             </div>
             <div class="col-md-10">
-                Form goes here
+                <form>
+                    <!-- form-group helps with adjusting the alignment of elemets -->
+                    <div class="form-group row">
+                        <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                        <div class="col-md-10">
+                        <!-- form-control adds default styling for form inpits to make it look cleaner such as padding and size -->
+                        <!-- You could also add additional classes if you wanted to with form-control -->
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                    <!-- col-form-label to cause them to center vertically with their associated input fields-->
+                        <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="areaCode" class="col-md-2 col-form-label">Contact Tel</label>
+                        <div class="col-5 col-md-3">
+                            <input type="text" class="form-control col-form-label" id="areaCode" name="areaCode" placeholder="Area Code">
+                        </div>
+                        <div class="col-7">
+                            <input type="text" class="form-control" name="telNum" placeholder=" Tel. number">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group row">
+                        <!-- offset-md-2 moved diva over two cols on vp size md and up -->
+                        <div class="col offset-md-2">
+                            May We Contact You?
+                        <!-- form-check improves layout and behavior of radio and checkboxes-->
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactYes"name="contactRadios" value="yes"> 
+                                <label for="contactYes" class="form-check-label">Yes</label>
+                            </div>
+                        <!-- forn-check-inline makes them be placed in line-->
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactNo"name="conatctRadios" value="no"> 
+                                <label for="contactNo" class="form-check-label">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" name="feedback" id="feedback"rows="8"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-primary">Send Feedback</button>
+                        </div>
+                    </div>
+
+                </form>
             </div>
        </div>
 
     </div>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
